@@ -22,5 +22,13 @@ def yes2():
 def no2():
     return render_template("no2.html")
 
+@app.route("/cont")
+def cont():
+    return render_template("cont.html")
+
+@app.route("/last")
+def last():
+    return render_template("last.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
